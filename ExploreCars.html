@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Explore Cars</title>
+        <style>
+            body{
+                margin-bottom: 1000px;
+            }
+            .header{
+                height: 60px;
+                display: flex;
+                position: fixed;
+                align-items: center;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: white;
+                justify-content: space-between;
+                border-bottom-width: 1px;
+                border-bottom-color: rgba(128, 128, 128, 0.283);
+                border-bottom-style: solid;
+                z-index: 100;
+            }
+            .car-preview{
+                margin-top:100px;
+                display: grid;
+                width: 400px;
+            }
+            .thumbnail{
+                display: block;
+                cursor: pointer;
+                width: 100%;
+            }
+            .container-grid{
+                background: rgba(0, 0, 0, 0.5) fixed center;
+                display: grid;
+                row-gap: 10px;
+                column-gap: 30px;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .home-button{
+                border: none;
+                border-radius: 5px;
+                padding: 15px;
+                margin-left: 30px;
+                background-color: lightseagreen;
+                color: white;
+                
+            }
+            .left-part{
+                margin: 0;
+            }
+            .explore-text{
+                display: inline-block;
+                margin-left: 300px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-part">
+                <button class="home-button">
+                   <a href="index.html" style="text-decoration:none">Home</a>
+                </button>
+                <p class="explore-text">Explore</p>
+            </div>
+        </div>
+        <div class="container-grid">
+            <div class="car-preview">
+                <div class="image-container">
+                    <img src="images/th.jpeg" class="thumbnail">
+                </div>
+                <div class="car-info">
+                    <p>Price : 6500000</p>
+                    <p>Model : 3.0 new</p>
+                </div>
+            </div>
+
+            <div class="car-preview">
+                <div class="image-container">
+                    <img src="images/fortuner old.jpeg" class="thumbnail">
+                </div>
+                <div class="car-info">
+                    <p>Price : 6000000</p>
+                    <p>Model : 3.0 CRDI</p>
+                </div>
+            </div>
+            <div class="car-preview">
+                <div class="image-container">
+                    <img src="images/hycross.jpeg">
+                </div>
+                <div class="car-info">
+                    <p>Price : 3500000</p>
+                    <p>Model : 2.6 lit</p>
+                </div>
+            </div>
+            <div class="car-preview">
+                <div class="image-container">
+                    <img src="images/land cruiser.jpeg" class="thumbnail">
+                </div>
+                <div class="car-info">
+                    <p>Price : 10000000</p>
+                    <p>Model : 2.8 Di</p>
+                </div>
+            </div>
+            <div class="car-preview">
+                <div class="image-container">
+                    <img src="images/Innova old.jpeg" class="thumbnail">
+                </div>
+                <div class="car-info">
+                    <p>Price : 1800000</p>
+                    <p>Model : 2.5 di engine</p>
+                </div>
+            </div>
+            <div class="car-preview">
+                <div class="image-container">
+                    <img src="images/etios.jpeg" class="thumbnail">
+                </div>
+                <div class="car-info">
+                    <p>Price : 950000</p>
+                    <p>Model : ddis</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
